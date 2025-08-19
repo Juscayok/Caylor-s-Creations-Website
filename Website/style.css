@@ -1,0 +1,215 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #181e36;
+    margin: 0;
+    padding: 0;
+    color: #eaf1ff;
+    min-height: 100vh;
+    background-image: url('assets/bg-pattern.png'), linear-gradient(135deg, #181e36 0%, #232a4d 100%);
+    background-size: cover, auto;
+    background-repeat: no-repeat;
+}
+header {
+    background: transparent;
+    padding: 2em 0 1em 0;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+nav {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+nav a {
+    color: #eaf1ff;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #00aaff;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    color: #eaf1ff;
+    text-shadow: 0 0 16px #00aaff, 0 0 2px #fff;
+    margin-left: 2em;
+    margin-bottom: 0.2em;
+}
+#subtitle {
+    font-size: 1.5em;
+    color: #eaf1ff;
+    margin-bottom: 1em;
+    font-weight: 400;
+    text-shadow: 0 0 8px #00aaff;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(24, 30, 54, 0.85);
+    padding: 2em;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(0,170,255,0.08);
+    position: relative;
+    z-index: 1;
+}
+section {
+    margin-bottom: 2em;
+    background: rgba(35, 42, 77, 0.7);
+    border-radius: 12px;
+    padding: 1.5em;
+    box-shadow: 0 2px 12px rgba(0,170,255,0.05);
+}
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background: none;
+    box-shadow: none;
+    margin-bottom: 2em;
+    min-height: 400px;
+}
+#profile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 2em 0;
+}
+#profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 0 32px #00aaff99;
+    border: 4px solid #00aaff;
+}
+#profile-name {
+    font-size: 2em;
+    font-weight: 700;
+    color: #eaf1ff;
+    margin-bottom: 0.5em;
+}
+#profile-bio {
+    font-size: 1.2em;
+    color: #eaf1ff;
+    margin-bottom: 0.5em;
+}
+#character-art {
+    width: 320px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 0 48px #00aaff99, 0 0 8px #fff;
+    margin-right: 2em;
+    background: #232a4d;
+    border: 4px solid #00aaff;
+}
+#image-gallery img {
+    width: 140px;
+    margin: 0.5em;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00aaff44;
+    border: 2px solid #232a4d;
+}
+#video-gallery video {
+    width: 320px;
+    margin: 0.5em;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00aaff44;
+    border: 2px solid #232a4d;
+}
+#game-gallery iframe {
+    width: 400px;
+    height: 300px;
+    margin: 0.5em;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00aaff44;
+    background: #232a4d;
+}
+#file-list a {
+    display: block;
+    margin: 0.5em 0;
+    color: #00aaff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+button {
+    margin: 0.5em;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00aaff 0%, #232a4d 100%);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #00aaff44;
+    transition: background 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #232a4d 0%, #00aaff 100%);
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: transparent;
+    color: #eaf1ff;
+    font-size: 1em;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2em;
+}
+/* Neon glow effect for main title */
+h1 {
+    text-shadow: 0 0 24px #00aaff, 0 0 2px #fff;
+}
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    main {
+        padding: 1em;
+    }
+    #profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+    #game-gallery iframe {
+        width: 240px;
+        height: 180px;
+    }
+    #video-gallery video {
+        width: 180px;
+    }
+}
+.bg-scatter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+.bg-scatter img {
+    position: absolute;
+    opacity: 0.18;
+    filter: drop-shadow(0 0 12px #00aaff88);
+    width: 120px;
+    height: auto;
+    transition: opacity 0.3s;
+}

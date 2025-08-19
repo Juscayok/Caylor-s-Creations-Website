@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caylor's Creations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-scatter">
+        <img src="assets/Images/foxsheet.jpg" style="top:3%;left:2%;">
+        <img src="assets/Images/Gojo - Copy.png" style="top:85%;left:5%;">
+        <img src="assets/Images/sprite_BlackBeard - Copy.png" style="top:10%;left:88%;">
+        <img src="assets/Images/sprite_Naruto_Human_SageMode - Copy.png" style="top:80%;left:90%;">
+        <img src="assets/Images/sprite_Naruto_Hyuga_Byakugan - Copy.png" style="top:5%;left:70%;">
+        <img src="assets/Images/sprite_Naruto_Jinchuriki_TailedBeastCloak - Copy.png" style="top:90%;left:60%;">
+        <img src="assets/Images/sprite_Naruto_Senju_SageofSixPaths - Copy.png" style="top:90%;left:30%;">
+        <img src="assets/Images/sprite_Naruto_Uchiha_Sharingan.png" style="top:5%;left:40%;">
+    </div>
+    <header>
+        <h1>Caylor's Creations</h1>
+        <nav>
+            <a href="#images">Images</a>
+            <a href="#videos">Videos</a>
+            <a href="#games">Games</a>
+            <a href="#files">Files</a>
+            <a href="#share">Share</a>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <img id="character-art" src="assets/3dfox.png" alt="Character Art" />
+            <div>
+                <h1>Caylor's Creations</h1>
+                <div id="subtitle">Gaming and Character Design</div>
+                <h2 id="profile-name">Justin Caylor</h2>
+                <p id="profile-bio">I am creating these images, characters, and games because I enjoy it as a hobby. I am still starting out, but learning quickly. I will update my site as content is created.</p>
+            </div>
+        </section>
+        <section id="images">
+            <h2>Images</h2>
+            <input type="file" id="image-upload" accept="image/*" multiple />
+            <div id="image-gallery"></div>
+        </section>
+        <section id="videos">
+            <h2>Videos</h2>
+            <input type="file" id="video-upload" accept="video/*" multiple />
+            <div id="video-gallery"></div>
+        </section>
+        <section id="games">
+            <h2>Games</h2>
+            <input type="file" id="game-upload" accept=".html,.js" multiple />
+            <div id="game-gallery"></div>
+        </section>
+        <section id="files">
+            <h2>3D Files (.fbx, .gbl)</h2>
+            <input type="file" id="file-upload" accept=".fbx,.gbl" multiple />
+            <div id="file-list"></div>
+        </section>
+        <section id="share">
+            <h2>Share or Post</h2>
+            <button onclick="shareTo('facebook')">Share to Facebook</button>
+            <button onclick="shareTo('twitter')">Share to Twitter/X</button>
+            <button onclick="shareTo('linkedin')">Share to LinkedIn</button>
+        </section>
+    </main>
+    <footer>
+    <p>&copy; 2025 Caylor's Creations</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
